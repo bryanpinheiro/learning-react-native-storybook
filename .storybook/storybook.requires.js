@@ -11,7 +11,7 @@ import {
 global.STORIES = [
   {
     titlePrefix: '',
-    directory: './.storybook/stories',
+    directory: './src/stories',
     files: '**/*.stories.?(ts|tsx|js|jsx)',
     importPathMatcher:
       '^\\.[\\\\/](?:\\.storybook\\/stories(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(?:ts|tsx|js|jsx)?)$',
@@ -47,7 +47,7 @@ try {
 
 const getStories = () => {
   return {
-    './.storybook/stories/Button/Button.stories.js': require('./stories/Button/Button.stories.js'),
+    './.storybook/stories/atoms/buttons/MyButton.stories.tsx': require('../src/stories/atoms/buttons/MyButton.stories'),
   };
 };
 
