@@ -1,5 +1,11 @@
-{
+module.exports = {
   "expo": {
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "storybookEnabled": process.env.STORYBOOK_ENABLED,
+    },
     "name": "learning-react-native-storybook",
     "slug": "learning-react-native-storybook",
     "version": "1.0.0",
