@@ -47,7 +47,9 @@ try {
 
 const getStories = () => {
   return {
-    './.storybook/stories/atoms/buttons/MyButton.stories.tsx': require('../src/stories/atoms/buttons/MyButton.stories'),
+    './src/stories/atoms/buttons/ButtonPrimary.stories.tsx': require('../src/stories/atoms/buttons/ButtonPrimary.stories.tsx'),
+    './src/stories/atoms/buttons/ButtonSecondary.stories.tsx': require('../src/stories/atoms/buttons/ButtonSecondary.stories.tsx'),
+    './src/stories/atoms/buttons/ButtonTertiary.stories.tsx': require('../src/stories/atoms/buttons/ButtonTertiary.stories.tsx'),
   };
 };
 
