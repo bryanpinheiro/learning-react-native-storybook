@@ -12,6 +12,9 @@ const meta: Meta<ButtonSecondaryProps> = {
       </View>
     ),
   ],
+  argTypes: {
+    onPress: { action: 'onPress' },
+  },
 };
 
 export default meta;

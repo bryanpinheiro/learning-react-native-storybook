@@ -9,13 +9,14 @@ export interface ButtonTertiaryProps {
   type: string;
   loading?: boolean;
   fullwidth?: boolean;
-  onClick?: () => void;
+  onPress?: () => void;
 }
 
 export const ButtonTertiary = ({
   loading = false,
   fullwidth = true,
   label,
+  onPress,
   ...props
 }: ButtonTertiaryProps) => {
   const [isPressed, setIsPressed] = useState(false);
@@ -36,6 +37,7 @@ export const ButtonTertiary = ({
 
   return (
     <TouchableOpacity
+      onPress={onPress}
       onPressIn={handlePressIn}
       onPressOut={handlePressOut}
       style={buttonStyle}
